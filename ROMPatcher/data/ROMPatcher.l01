@@ -1,0 +1,11 @@
+/*
+========================================================================
+ Name        : ROMPatcher.l01
+ Author      : -=ZoRn=-
+ Copyright   : 
+ Description : 
+========================================================================
+*/
+// localized strings for language: UK English (01)
+#define STR_ROMPatcherApplication_1 "ROMPatcher"
+#define STR_ROMPatcherApplication_2 "ROMPatcher"

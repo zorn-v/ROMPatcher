@@ -1,0 +1,129 @@
+/*
+========================================================================
+ Name        : ROMPatcherListBox.rssi
+ Author      : -=ZoRn=-
+ Copyright   : 
+ Description : 
+========================================================================
+*/
+#include <Rompatcher_aif.mbg>
+#include "ROMPatcherListBox.hrh"
+#include "ROMPatcherListBox.loc"
+
+RESOURCE AVKON_VIEW r_rompatcher_list_box_rompatcher_list_box_view
+	{
+	cba = R_AVKON_SOFTKEYS_OPTIONS_EXIT;
+	menubar = r_rompatcher_list_box_options_menu;
+	}
+RESOURCE MENU_BAR r_rompatcher_list_box_options_menu
+	{titles =
+			{
+			MENU_TITLE
+				{
+				menu_pane = r_rompatcher_list_box_menu_pane1_menu_pane;
+				}
+			};
+
+	}
+RESOURCE STATUS_PANE_APP_MODEL r_rompatcher_list_box_status_pane
+	{
+	panes =
+		{
+		SPANE_PANE
+			{
+			id = EEikStatusPaneUidTitle;
+			type = EAknCtTitlePane;
+			resource = r_rompatcher_list_box_title_resource;
+			}
+		};
+	}
+RESOURCE TITLE_PANE r_rompatcher_list_box_title_resource
+	{
+	txt = STR_ROMPatcherListBoxView_1;
+	}
+RESOURCE LISTBOX r_rompatcher_list_box_list_box
+	{
+	flags = EAknListBoxSelectionList;
+	}
+RESOURCE MENU_PANE r_rompatcher_list_box_menu_pane1_menu_pane
+	{
+	items =
+		{
+		MENU_ITEM
+			{
+			cascade = r_rompatcher_list_box_menu_pane2;
+			txt = STR_ROMPatcherListBoxView_4;
+			},
+		MENU_ITEM
+			{
+			command = EROMPatcherListBoxViewTestMenuItemCommand;
+			txt = STR_ROMPatcherListBoxView_2;
+			},
+		MENU_ITEM
+			{
+			command = EROMPatcherListBoxViewEnable_capsMenuItemCommand;
+			txt = STR_ROMPatcherListBoxView_3;
+			},
+		MENU_ITEM
+			{
+			command = EROMPatcherListBoxViewAbout_MenuItemCommand;
+			txt = STR_ROMPatcherListBoxView_8;
+			}
+		};
+	}
+RESOURCE MENU_PANE r_rompatcher_list_box_menu_pane2
+	{
+	items =
+		{
+		MENU_ITEM
+			{
+			command = EROMPatcherListBoxViewApplyMenuItemCommand;
+			txt = STR_ROMPatcherListBoxView_7;
+			},
+		MENU_ITEM
+			{
+			command = EROMPatcherListBoxViewDisableMenuItemCommand;
+			txt = STR_ROMPatcherListBoxView_9;
+			},
+		MENU_ITEM
+			{
+			command = EROMPatcherListBoxViewAdd_to_autostartMenuItemCommand;
+			txt = STR_ROMPatcherListBoxView_6;
+			},
+		MENU_ITEM
+			{
+			command = EROMPatcherListBoxViewRemove_from_autostartMenuItemCommand;
+			txt = STR_ROMPatcherListBoxView_10;
+			},
+		MENU_ITEM
+			{
+			command = EROMPatcherListBoxViewPatch_infoMenuItemCommand;
+			txt = STR_ROMPatcherListBoxView_5;
+			}
+		};
+	}
+
+RESOURCE DIALOG r_about_message_note
+{
+   flags = EGeneralQueryFlags | EEikDialogFlagNoBorder | EEikDialogFlagNoShadow;
+   buttons = R_AVKON_SOFTKEYS_OK_EMPTY;
+   items=
+   {
+       DLG_LINE
+       {
+          type = EAknCtPopupHeadingPane;
+          id = EAknMessageQueryHeaderId;
+          control = AVKON_HEADING
+          {
+          };
+       },
+       DLG_LINE
+       {
+          type = EAknCtMessageQuery;
+          id = EAknMessageQueryContentId;
+          control = AVKON_MESSAGE_QUERY
+          {
+          };
+        }
+   };
+}

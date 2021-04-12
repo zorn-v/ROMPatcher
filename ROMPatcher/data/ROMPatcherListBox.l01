@@ -1,0 +1,19 @@
+/*
+========================================================================
+ Name        : ROMPatcherListBox.l01
+ Author      : -=ZoRn=-
+ Copyright   : 
+ Description : 
+========================================================================
+*/
+// localized strings for language: UK English (01)
+#define STR_ROMPatcherListBoxView_1 "ROM Patcher"
+#define STR_ROMPatcherListBoxView_2 "Disable caps"
+#define STR_ROMPatcherListBoxView_3 "Enable caps"
+#define STR_ROMPatcherListBoxView_7 "Apply"
+#define STR_ROMPatcherListBoxView_4 "Patch"
+#define STR_ROMPatcherListBoxView_5 "Patch info"
+#define STR_ROMPatcherListBoxView_8 "About..."
+#define STR_ROMPatcherListBoxView_9 "Disable"
+#define STR_ROMPatcherListBoxView_10 "Rem. from auto"
+#define STR_ROMPatcherListBoxView_6 "Add to auto"

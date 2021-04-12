@@ -1,0 +1,11 @@
+/*
+========================================================================
+ Name        : ROMPatcher.loc
+ Author      : -=ZoRn=-
+ Copyright   : 
+ Description : 
+========================================================================
+*/
+#ifdef LANGUAGE_01
+#include "ROMPatcher.l01"
+#endif

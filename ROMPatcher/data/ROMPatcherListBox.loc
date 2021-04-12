@@ -1,0 +1,11 @@
+/*
+========================================================================
+ Name        : ROMPatcherListBox.loc
+ Author      : -=ZoRn=-
+ Copyright   : 
+ Description : 
+========================================================================
+*/
+#ifdef LANGUAGE_01
+#include "ROMPatcherListBox.l01"
+#endif

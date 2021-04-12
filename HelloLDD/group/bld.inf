@@ -1,0 +1,18 @@
+/*
+============================================================================
+ Name		: bld.inf
+ Author	  : leftup
+ Copyright   : Your copyright notice
+ Description : This file provides the information required for building the
+				whole of a HelloLDD.
+============================================================================
+*/
+
+PRJ_PLATFORMS
+DEFAULT
+
+PRJ_EXPORTS
+..\inc\HelloLDD.h
+
+PRJ_MMPFILES
+HelloLDD.mmp BUILD_AS_ARM

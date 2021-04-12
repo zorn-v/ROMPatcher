@@ -1,0 +1,19 @@
+/*
+========================================================================
+ Name        : ROMPatcherListBox.hrh
+ Author      : -=ZoRn=-
+ Copyright   : 
+ Description : 
+========================================================================
+*/
+enum TROMPatcherListBoxViewCommands
+	{
+	EROMPatcherListBoxViewTestMenuItemCommand = 0x6000,
+	EROMPatcherListBoxViewEnable_capsMenuItemCommand,
+	EROMPatcherListBoxViewApplyMenuItemCommand,
+	EROMPatcherListBoxViewPatch_infoMenuItemCommand,
+	EROMPatcherListBoxViewAbout_MenuItemCommand,
+	EROMPatcherListBoxViewDisableMenuItemCommand,
+	EROMPatcherListBoxViewAdd_to_autostartMenuItemCommand,
+	EROMPatcherListBoxViewRemove_from_autostartMenuItemCommand
+	};

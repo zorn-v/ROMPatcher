@@ -1,0 +1,51 @@
+/*
+============================================================================
+ Name		: HelloLDD.mmp
+ Author	  : leftup
+ Copyright   : Your copyright notice
+ Description : This is the project specification file for HelloLDD.
+============================================================================
+*/
+
+TARGET		  RPEngine.ldd
+TARGETTYPE	  LDD
+EPOCALLOWDLLDATA
+
+UID 0x100000af 0x20085000
+
+USERINCLUDE	 ..\inc
+SYSTEMINCLUDE   \epoc32\include
+
+SOURCEPATH	  ..\src
+
+SOURCE		  HelloLDD.cpp
+
+//By default, the build tools look for the WINSCW def file in a BWINS directory
+//(at the same level as the directory containing the mmp file), 
+//the GCC ARM def file in a BMARM directory, and the ARMV5 def file in a EABI directory. 
+//If def files are stored in these locations, the project files does not need to specify
+//the location of the def files explicitly. If you want to store the def files in some other 
+//location, you will need to specify in the project file where the .def files are using 
+//the deffile keyword.
+
+//The following commented out code shows how the build system uses the implicit
+// location for defiles. To create the DEF files Choose Project > Freeze Exports from Carbide
+// or run 'abld freeze' from the command-line
+//#if defined (WINS)
+//  DEFFILE ..\bwins\HelloLDD.def
+//#elif defined (GCC32)
+//  DEFFILE ..\bmarm\HelloLDD.def
+//#else 
+//  DEFFILE ..\eabi\HelloLDD.def
+//#endif
+
+nostrictdef
+
+
+#ifdef ENABLE_ABIV2_MODE
+DEBUGGABLE
+#endif
+
+LIBRARY ekern.lib
+
+CAPABILITY ALL

@@ -1,0 +1,29 @@
+/*
+============================================================================
+ Name           : RPAutoStart.mmp
+ Author   :
+ Copyright   : Your copyright notice
+ Description : This is the project specification file for RPAutoStart.
+============================================================================
+*/
+
+TARGET            RPAutoStart.exe
+TARGETTYPE        exe
+UID                      0 0xE2AFD3AA
+
+USERINCLUDE      ..\inc
+SYSTEMINCLUDE   \epoc32\include
+
+
+SOURCEPATH        ..\src
+SOURCE            RPAutoStart.cpp
+
+LIBRARY          euser.lib efsrv.lib bafl.lib
+
+
+CAPABILITY ALL -TCB
+
+SOURCEPATH ..\data
+START RESOURCE [E2AFD3AA].rss
+	TARGETPATH \private\101f875a\import\ 
+END

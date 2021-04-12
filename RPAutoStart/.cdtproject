@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?eclipse-cdt version="2.0"?>
+
+<cdtproject id="com.nokia.carbide.cpp.project.core.carbidecppproject">
+<extension id="com.nokia.carbide.cpp.project.core.CarbideCPPScannerProvider" point="org.eclipse.cdt.core.ScannerInfoProvider"/>
+<extension id="com.nokia.carbide.cdt.builder" point="com.nokia.carbide.cdt.builder.carbideCPPBuilder">
+<attribute key="rombuildworkingdir" value="c:\"/>
+<attribute key="infFileLocation" value="group/bld.inf"/>
+<attribute key="defaultBuildConfig" value="Phone Release (GCCE) [S60_3rd_MR]"/>
+<attribute key="buildFromInf" value="true"/>
+<attribute key="rombuildcommandline" value=""/>
+<attribute key="debugTargetMMP" value="RPAutoStart.mmp"/>
+<attribute key="cleanCommand" value="reallyclean"/>
+<attribute key="infBuildComponents" value=""/>
+</extension>
+<extension id="com.nokia.cdt.debug.cw.symbian.SymbianE32" point="org.eclipse.cdt.core.BinaryParser"/>
+<extension id="org.eclipse.cdt.core.PE" point="org.eclipse.cdt.core.BinaryParser"/>
+<extension id="org.eclipse.cdt.core.ELF" point="org.eclipse.cdt.core.BinaryParser"/>
+<data>
+<item id="org.eclipse.cdt.core.pathentry">
+<pathentry kind="src" path="src"/>
+<pathentry kind="src" path="inc"/>
+<pathentry kind="con" path="com.nokia.carbide.cpp.project.core.CARBIDE_CPP_PATH_INFO"/>
+<pathentry kind="out" path=""/>
+</item>
+</data>
+</cdtproject>

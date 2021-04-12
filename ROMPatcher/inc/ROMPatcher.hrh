@@ -1,0 +1,12 @@
+/*
+========================================================================
+ Name        : ROMPatcher.hrh
+ Author      : -=ZoRn=-
+ Copyright   : 
+ Description : 
+========================================================================
+*/
+enum TROMPatcherViewUids
+	{
+	EROMPatcherListBoxViewId = 1
+	};

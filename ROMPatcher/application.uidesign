@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<designerData version="1.1.0">
+  <componentManifest>
+    <manifestEntry id="com.nokia.sdt.series60.CAknApplication" version="1.1.0"/>
+    <manifestEntry id="com.nokia.sdt.series60.NonLayoutBase" version="1.0.0"/>
+    <manifestEntry id="com.nokia.sdt.series60.CAknDocument" version="1.0.0"/>
+    <manifestEntry id="com.nokia.sdt.series60.CAknViewAppUi" version="1.0.0"/>
+    <manifestEntry id="com.nokia.sdt.series60.CAknAppUi" version="1.0.0"/>
+    <manifestEntry id="com.nokia.sdt.series60.CAknAppUiBase" version="1.0.0"/>
+    <manifestEntry id="com.nokia.sdt.series60.DesignTimeContainer" version="1.0.0"/>
+    <manifestEntry id="com.nokia.sdt.series60.StatusPane" version="1.0.0"/>
+    <manifestEntry id="com.nokia.sdt.series60.ControlBase" version="1.0.0"/>
+    <manifestEntry id="com.nokia.sdt.series60.StatusPaneCaption" version="1.0.0"/>
+    <manifestEntry id="com.nokia.sdt.series60.StatusPaneTitleBase" version="1.0.0"/>
+    <manifestEntry id="com.nokia.sdt.series60.StatusPaneContextAppIcon" version="1.0.0"/>
+    <manifestEntry id="com.nokia.sdt.series60.StatusPaneContextBase" version="1.0.0"/>
+    <manifestEntry id="com.nokia.sdt.series60.CBA" version="1.0.0"/>
+    <manifestEntry id="com.nokia.sdt.series60.CBABase" version="1.0.0"/>
+    <manifestEntry id="com.nokia.sdt.series60.AvkonViewReference" version="1.0.0"/>
+    <manifestEntry id="com.nokia.sdt.series60.DesignReference" version="1.0.0"/>
+  </componentManifest>
+  <property id="com.nokia.sdt.symbian.dm.RESOURCE_DIRECTORY_ID">data</property>
+  <property id="com.nokia.sdt.component.symbian.vendor">com.nokia.series60</property>
+  <property id="com.nokia.sdt.component.symbian.version">3.0.1</property>
+  <property id="com.nokia.sdt.symbian.dm.COMPONENT_PROVIDER">com.nokia.sdt.component.symbian.Symbian-Provider</property>
+  <property id="com.nokia.sdt.symbian.dm.INCLUDE_DIRECTORY_ID">inc</property>
+  <property id="com.nokia.sdt.symbian.dm.ROOT_CONTAINER">ROMPatcherAppUi</property>
+  <property id="com.nokia.sdt.symbian.dm.SOURCE_DIRECTORY_ID">src</property>
+  <property id="com.nokia.sdt.symbian.dm.ROOT_APPLICATION_NAME">ROMPatcher</property>
+  <property id="com.nokia.sdt.symbian.dm.SOURCEGEN_PROVIDER">com.nokia.sdt.sourcegen.Symbian-Provider</property>
+  <property id="com.nokia.sdt.symbian.dm.BUILD_DIRECTORY_ID">group</property>
+  <component id="com.nokia.sdt.series60.CAknApplication">
+    <property id="className">CROMPatcherApplication</property>
+    <property id="documentBase">ROMPatcher</property>
+    <property id="name">ROMPatcherApplication</property>
+    <property id="uid">0xE4DD2DCB</property>
+    <component id="com.nokia.sdt.series60.CAknDocument">
+      <property id="className">CROMPatcherDocument</property>
+      <property id="name">ROMPatcherDocument</property>
+      <component id="com.nokia.sdt.series60.CAknViewAppUi">
+        <property id="initialDesign" type="componentRef">aknViewReference1</property>
+        <property id="className">CROMPatcherAppUi</property>
+        <compoundProperty id="location">
+          <property id="x">38</property>
+          <property id="y">10</property>
+        </compoundProperty>
+        <property id="name">ROMPatcherAppUi</property>
+        <compoundProperty id="size">
+          <property id="width">176</property>
+          <property id="height">208</property>
+        </compoundProperty>
+        <component id="com.nokia.sdt.series60.StatusPane">
+          <compoundProperty id="location">
+            <property id="x">16</property>
+            <property id="y">1</property>
+          </compoundProperty>
+          <property id="name">statusPane</property>
+          <compoundProperty id="size">
+            <property id="width">152</property>
+            <property id="height">43</property>
+          </compoundProperty>
+          <component id="com.nokia.sdt.series60.StatusPaneCaption">
+            <property id="shortCaption" type="i18n">STR_ROMPatcherApplication_2</property>
+            <compoundProperty id="location">
+              <property id="x">48</property>
+            </compoundProperty>
+            <property id="longCaption" type="i18n">STR_ROMPatcherApplication_1</property>
+            <property id="name">caption</property>
+            <compoundProperty id="size">
+              <property id="width">104</property>
+              <property id="height">28</property>
+            </compoundProperty>
+          </component>
+          <component id="com.nokia.sdt.series60.StatusPaneContextAppIcon">
+            <compoundProperty id="location"/>
+            <property id="name">appIcon1</property>
+            <compoundProperty id="size">
+              <property id="width">44</property>
+              <property id="height">44</property>
+            </compoundProperty>
+            <compoundProperty id="image">
+              <property id="bmpfile">\resource\apps\ROMPatcher_aif.mif</property>
+              <property id="bmpid">EMbmRompatcher_aifQgn_menu_rompatcher</property>
+              <property id="bmpmask">EMbmRompatcher_aifQgn_menu_rompatcher_mask</property>
+            </compoundProperty>
+          </component>
+        </component>
+        <component id="com.nokia.sdt.series60.CBA">
+          <compoundProperty id="location">
+            <property id="y">184</property>
+          </compoundProperty>
+          <compoundProperty id="info"/>
+          <property id="name">controlPane</property>
+          <compoundProperty id="size">
+            <property id="width">176</property>
+            <property id="height">24</property>
+          </compoundProperty>
+        </component>
+        <component id="com.nokia.sdt.series60.AvkonViewReference">
+          <property id="filePath">ROMPatcherListBox.uidesign</property>
+          <property id="baseName">ROMPatcherListBox</property>
+          <compoundProperty id="tabImage"/>
+          <property id="name">aknViewReference1</property>
+        </component>
+      </component>
+    </component>
+  </component>
+  <stringBundle>
+    <stringTable language="LANG_English">
+      <string id="STR_ROMPatcherApplication_1">ROMPatcher</string>
+      <string id="STR_ROMPatcherApplication_2">ROMPatcher</string>
+    </stringTable>
+  </stringBundle>
+  <macroTable/>
+  <sourceMappingState>
+    <resourceMappings>
+      <resourceMapping instanceName="statusPane">r_application_status_pane</resourceMapping>
+      <resourceMapping instanceName="aknViewReference1" rsrcId="tabText">r_application_akn_view_reference1</resourceMapping>
+      <resourceMapping instanceName="ROMPatcherAppUi" rsrcId="localisable_app_info">r_localisable_app_info</resourceMapping>
+      <resourceMapping instanceName="ROMPatcherAppUi">r_application_rompatcher_app_ui</resourceMapping>
+    </resourceMappings>
+    <enumMappings>
+      <enumMapping instanceName="aknViewReference1" propertyId="" nameAlgorithm="com.nokia.sdt.component.symbian.NAME_ALG_VIEW_UID">EROMPatcherListBoxViewId</enumMapping>
+    </enumMappings>
+    <arrayMappings/>
+  </sourceMappingState>
+  <generatedFiles>
+    <file>inc/ROMPatcherApplication.h</file>
+    <file>inc/ROMPatcherDocument.h</file>
+    <file>src/ROMPatcherDocument.cpp</file>
+    <file>src/ROMPatcherApplication.cpp</file>
+    <file>src/ROMPatcherAppUi.cpp</file>
+    <file>inc/ROMPatcherAppUi.h</file>
+    <file>data/ROMPatcher.rss</file>
+    <file>inc/ROMPatcher.hrh</file>
+    <file>data/ROMPatcherListBox.rssi</file>
+    <file>inc/ROMPatcherListBox.hrh</file>
+    <file>data/ROMPatcher.loc</file>
+    <file>data/ROMPatcher.l01</file>
+    <file>data/ROMPatcherListBox.loc</file>
+    <file>data/ROMPatcherListBox.l01</file>
+  </generatedFiles>
+</designerData>

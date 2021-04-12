@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CarbideBuilderConfigInfo version="1">
+  <configuration name="Phone Release (ARMV5) [S60_3rd_MR]">
+    <sisBuilder additionalOptions="" cert="" contentSearchLocation="" key="" outputFileName="" password="" pkgFile="(none)" signedFileName=""/>
+    <envVars/>
+  </configuration>
+</CarbideBuilderConfigInfo>
