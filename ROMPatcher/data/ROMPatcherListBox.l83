@@ -1,0 +1,19 @@
+/*
+========================================================================
+ Name        : ROMPatcherListBox.l83
+ Author      : ZoRn
+ Copyright   : 
+ Description : 
+========================================================================
+*/
+// localized strings for language: Spanish Lta. (83)
+#define STR_ROMPatcherListBoxView_1 "Parcheador de ROM"
+#define STR_ROMPatcherListBoxView_2 "Desactivar caps"
+#define STR_ROMPatcherListBoxView_3 "Activar caps"
+#define STR_ROMPatcherListBoxView_7 "Habilitar"
+#define STR_ROMPatcherListBoxView_4 "Parche"
+#define STR_ROMPatcherListBoxView_5 "Información del parche"
+#define STR_ROMPatcherListBoxView_8 "Versión"
+#define STR_ROMPatcherListBoxView_9 "Desactivar"
+#define STR_ROMPatcherListBoxView_10 "Cancelar activación automática"
+#define STR_ROMPatcherListBoxView_6 "Añadir a activación automática"
