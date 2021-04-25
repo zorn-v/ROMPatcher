@@ -1,0 +1,11 @@
+/*
+========================================================================
+ Name        : ROMPatcher.l83
+ Author      : ZoRn
+ Copyright   : 
+ Description : 
+========================================================================
+*/
+// localized strings for language: Spanish Lta. (83)
+#define STR_ROMPatcherApplication_1 "ROMPatcher"
+#define STR_ROMPatcherApplication_2 "ROMPatcher"
