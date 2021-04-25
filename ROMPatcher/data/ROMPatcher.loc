@@ -1,11 +1,13 @@
 /*
 ========================================================================
  Name        : ROMPatcher.loc
- Author      : -=ZoRn=-
+ Author      : ZoRn
  Copyright   : 
  Description : 
 ========================================================================
 */
 #ifdef LANGUAGE_01
 #include "ROMPatcher.l01"
+#ifdef LANGUAGE_83
+#include "ROMPatcher.l83"
 #endif
